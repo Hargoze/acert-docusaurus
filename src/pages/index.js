@@ -6,6 +6,8 @@ import Link from '@docusaurus/Link';
 import classnames from 'classnames';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import styles from './index.module.css';
+import { List, ListItem, ListIcon } from "@chakra-ui/react"
+import { ChevronRightIcon } from "@chakra-ui/icons"
 
 const AnchoredH2 = Heading('h2');
 
@@ -34,60 +36,17 @@ function HeroContent() {
 // FEATURES
 const features = [
   {
-    title: 'Scalable',
-    icon: 'zap',
-    description: (
-      <>
-        acert is designed to be used in the most demanding production environments and for <Link to="/docs/about/usecases">critical missions</Link>.
-      </>
-    ),
+    title: 'Developer Tools',
+    description: ['decentralized Storage', 'Data Dashboard', 'Smart Contract Tools'],
   },
   {
-    title: 'Minimal',
-    icon: 'check-circle',
-    description: (
-      <>
-        acert is framework independant and includes minimal scope and dependancies, with clear <Link to="/docs/about/secpolicy">security guarantees</Link>.  
-      </>
-    ),
+    title: 'Middleware',
+    description: ['decentralized Storage', 'IoT Data Oracle', 'Confidential Computing'],
   },
   {
-    title: 'Open',
-    icon: 'unlock',
-    description: (
-      <>
-        acert fosters a fair and <Link to="/docs/about/opensource">open ecosystem</Link>. Lock-in free, transparent and future proof trust protocols and standards.
-      </>
-    ),
+    title: 'Iotex Blockchain',
+    description: ['Token Transaction', 'Data Exchange', 'Smart Contracts'],
   },
-  {
-    title: 'Documented',
-    icon: 'move',
-    description: (
-      <>
-        acert exists for builders. We put as much love into our <Link to="/docs/about/guides">guides</Link> and <Link to="/docs/about/examples">examples</Link> as with the rest of the product.
-      </>
-    ),
-  },
-  {
-    title: 'Current',
-    icon: 'shield',
-    description: (
-      <>
-      acert favors improved levels of understanding and actionnability against <Link to="/docs/about/guides">IoT cyber threats</Link>, through science and technology. 
-      </>
-    ),
-    
-  },
-  {
-    title: 'Flexible',
-    icon: 'navigation',
-    description: (
-      <>
-      acert supports <Link to="/docs/about/innovation">business and social innovation</Link>. Keeping things simple in general but allowing complex requirements.
-      </>
-    ),
-  }
 ];
 
 function Features({features}) {
@@ -119,11 +78,18 @@ function Features({features}) {
 function Feature({icon, title, description}) {
   return (
     <div className={classnames('col col--4', styles.feature)}>
-      <div className={styles.featureIcon}>
-        <i className={classnames('feather', `icon-${icon}`)}></i>
+      <div className={styles.featureBox}>
+        <h3>{title}</h3>
+        <List>
+        {description.map((elem, i) => (
+          <ListItem key={i}>
+            <ChevronRightIcon />
+            {elem}
+          </ListItem>
+        ))}
+        </List>
       </div>
-      <h3>{title}</h3>
-      <p>{description}</p>
+      
     </div>
   );
 }

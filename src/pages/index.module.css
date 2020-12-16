@@ -109,6 +109,18 @@
     margin-bottom: calc( var(--ifm-spacing-vertical) * 3 );
   }
   
+  .featureBox {
+    width: 100%;
+    border: solid #fc5230;
+  }
+
+  .featureList {  
+    padding-right: .5rem;
+    list-style: url("../../static/img/caret-right-solid.svg");
+    font-size: 1.2rem;
+    line-height: 2rem;
+    color: #02d4cc;
+  }
   .featureIcon {
     border-top: 1px solid var(--ifm-color-primary);
     color: var(--ifm-color-primary);
@@ -127,12 +139,11 @@
   
   /*
    * Performance Section
-   */
   
   .performance {
   
   }
-  
+  */
   /*
    * Comparison Section
    */
@@ -165,6 +176,7 @@
   
   .components ul {
     display: none;
+    list-style-image: url("../../static/img/caret-right-solid.svg");
   }
   
   .componentsCanvas {
