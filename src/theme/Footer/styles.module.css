@@ -6,3 +6,23 @@
 .footerLogoLink:hover {
   opacity: 1;
 }
+
+.footerContainer {
+  display: flex;
+  background-image: url("../../../static/img/background-2.png");
+  background-color: #007cba;
+  background-size: contain;
+  justify-content: space-around;
+}
+
+.footerContainer2 {
+  display: flex;
+  justify-content: space-around;
+  background-color: #005a87;
+  color: white
+}
+
+.footerText {
+  width: 60%;
+  color: white
+}

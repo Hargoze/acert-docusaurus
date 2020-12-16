@@ -80,10 +80,10 @@ function Feature({icon, title, description}) {
     <div className={classnames('col col--4', styles.feature)}>
       <div className={styles.featureBox}>
         <h3>{title}</h3>
-        <List>
+        <List color="yellow.500" >
         {description.map((elem, i) => (
           <ListItem key={i}>
-            <ChevronRightIcon />
+            <ChevronRightIcon color="yellow.500" />
             {elem}
           </ListItem>
         ))}
