@@ -1,47 +1,12 @@
 import React from 'react';
-import classnames from 'classnames';
-
-import Link from '@docusaurus/Link';
-import MailingList from '@site/src/components/MailingList';
-import SVG from 'react-inlinesvg';
-
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
-import useBaseUrl from '@docusaurus/useBaseUrl';
 import styles from './styles.module.css';
-import { Stack, Text } from "@chakra-ui/react"
-function FooterLink({to, href, label, ...props}) {
-  const toUrl = useBaseUrl(to);
-  return (
-    <Link
-      className="footer__link-item"
-      {...(href
-        ? {
-            target: '_blank',
-            rel: 'noopener noreferrer',
-            href,
-          }
-        : {
-            to: toUrl,
-          })}
-      {...props}>
-      {label}
-    </Link>
-  );
-}
-
-const FooterLogo = ({url, alt}) => (
-  <img className="footer__logo" alt={alt} src={url} />
-);
 
 function Footer() {
   const context = useDocusaurusContext();
   const {siteConfig = {}} = context;
   const {themeConfig = {}} = siteConfig;
   const {footer} = themeConfig;
-
-  const {copyright, links = [], logo = {}} = footer || {};
-  const logoUrl = useBaseUrl(logo.src);
-
   if (!footer) {
     return null;
   }

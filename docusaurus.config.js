@@ -9,7 +9,6 @@ module.exports = {
   organizationName: 'Acert', // Usually your GitHub org/user name.
   projectName: 'acert doc', // Usually your repo name.
   themeConfig: {
-    
     navbar: {
       hideOnScroll: false,
       logo: {
@@ -18,8 +17,6 @@ module.exports = {
       },
       items: [
         {to: 'docs/', label: 'Docs', position: 'left'},
-        {to: 'roadmap/', label: 'Roadmap', position: 'left'},
-        {to: 'blog/', label: 'Announcements', position: 'left'},
         {
           type: 'docsVersionDropdown',
           position: 'right',
@@ -30,68 +27,10 @@ module.exports = {
           label: 'GitHub',
           position: 'right',
         },
-        {href: '/community/', label: "Community", position: 'right'},
       ],
     },
     footer: {
       style: 'light',
-      links: [
-        {
-          title: 'About',
-          items: [
-            {
-              label: 'What is acert?',
-              to: 'docs/about/',
-            },
-            {
-              label: 'Manifesto',
-              to: 'manifesto/',
-            },
-            {
-              label: 'Roadmap',
-              to: 'roadmap/',
-            },
-            {
-              label: 'Press',
-              to: 'press/',
-            },
-          ],
-        },
-        {
-          title: 'Docs',
-          items: [
-            {
-              label: 'Installation',
-              to: 'docs/installation/',
-            },
-            {
-              label: 'Examples',
-              to: 'docs/examples/',
-            },
-          ],
-        },
-        {
-          title: 'Community',
-          items: [
-            {
-              label: 'Opensource projects',
-              to: 'docs/about/projects',
-            },
-            {
-              label: 'Github',
-              to: 'https://github.com/acertio/acert-open',
-            },
-            {
-              label: 'Announcements',
-              to: 'blog/',
-            },
-            {
-              label: 'Twitter',
-              to: 'https://twitter.com/acertHQ',
-            }
-          ],
-        },
-      ],
       logo: {
         alt: 'acert.io',
         src: 'static/img/SodaLogo300-120.png',
