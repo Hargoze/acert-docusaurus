@@ -37,7 +37,6 @@
   display: flex;
   justify-content: center;
   width: 100%;
-  padding-top: 60px;
   color: white;
 }
 
@@ -63,7 +62,7 @@
   justify-content: space-around;
   align-items: center;
   grid-template-columns: 20% 75%;
-  padding-bottom: 40px;
+  padding-top: 10px;
 }
 
 .footerWrapper2 {
@@ -87,11 +86,5 @@
   .footerWrapper {
     grid-template-columns: 90%;
     background-repeat: no-repeat;
-  }
-  .footerWrapper2 {
-    grid-template-columns: 90%;
-  }
-  .footerText {
-    width: 95%;
   }
 }
