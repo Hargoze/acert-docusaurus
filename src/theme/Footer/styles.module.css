@@ -26,9 +26,18 @@
   width: 200px;
   height: 113px;
 }
-.footerText {
+
+.footerBox {
+  display: flex;
+  justify-content: center;
   width: 100%;
-  color: white
+  padding-top: 60px;
+}
+
+.footerText {
+  width: 65%;
+  color: white;
+  text-align: justify;
 }
 
 .footerWrapper {
@@ -37,12 +46,13 @@
   background-color: #007cba;
   background-size: contain;
   justify-content: space-around;
+  align-items: center;
   grid-template-columns: 20% 60%;
 }
 
 @media screen and (max-width: 900px) {
   .footerWrapper {
-    grid-template-columns: 65%;
+    grid-template-columns: 90%;
     background-repeat: no-repeat;
   }
 }
