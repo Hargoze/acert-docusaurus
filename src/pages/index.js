@@ -25,9 +25,7 @@ function HeroContent() {
 
       <img src='../static/img/hero.svg' alt="acert hero banner"/>
 
-      <p className="hero--subsubtitle">
-        <h3>Open Source IAM <strong><em>(Identity and Access Management)</em></strong> for people and their things.</h3>
-      </p>
+      <h3>Open Source IAM <strong><em>(Identity and Access Management)</em></strong> for people and their things.</h3>
 
     </div>
   );

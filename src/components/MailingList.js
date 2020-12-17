@@ -10,7 +10,7 @@ function MailingList({block, buttonClass, center, description, size, width}) {
     <div className={classnames('mailing-list', {'mailing-list--block': block, 'mailing-list--center': center, [`mailing-list--${size}`]: size})}>
       {description !== false && (
         <div className="mailing-list--description">
-          <SVG className="navbar__logo" src="/img/icon.svg" alt="acert" width="32" height="auto" /><br/>
+          <SVG className="navbar__logo" src="/img/icon.svg" alt="acert" width="32" height="32" /><br/>
           The easiest way to stay up-to-date. No spam, ever.
         </div>
       )}

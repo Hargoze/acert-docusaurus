@@ -134,7 +134,7 @@ function Footer() {
       */}
       <div className={styles.footerWrapper}>
         <div className={styles.footerBox}>
-          <img src="../../static/img/Artboard.png" alt="Footer pic" className={styles.footerImage1}/>0
+          <img src="../../static/img/Artboard.png" alt="Footer pic" className={styles.footerImage1}/>
         </div>
         <div className={styles.footerBox}>
           <p className={styles.footerText}>This project has received funding from the European Union’s Horizon 2020 research and innovation programme under the NGI_TRUST grant agreement no 825618According to cybercrime magazine, “healthcare suffers 2-3X more cyberattacks than the average amount for other industries”, because the data has more value for hackers. Cyber regulations such as the EU cybersecurity act provide mandatory requirements to protect sensitive information and systems. Beyond traditional clinical systems of electronic health records (EHR), it remains really difficult to extend that line of requirements to connected devices people carry around as part of their treatments. If those medical devices aren’t properly secured, people may unknowingly be broadcasting their health status, as well as many other personal sensitive data, everywhere they go. Or even be directly harmed by hacked devices. Existing protocols available for IoT are unable to meet the complete requirements from regulators. In the current proposal, we provide an opensource pilot implementation on how an equipment vendor should protect the functions and data of their medical IoT devices.</p>
