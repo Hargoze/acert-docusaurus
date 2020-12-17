@@ -22,7 +22,27 @@
   color: white
 }
 
+.footerImage1 {
+  width: 200px;
+  height: 113px;
+}
 .footerText {
-  width: 60%;
+  width: 100%;
   color: white
+}
+
+.footerWrapper {
+  display: grid;
+  background-image: url("../../../static/img/background-2.png");
+  background-color: #007cba;
+  background-size: contain;
+  justify-content: space-around;
+  grid-template-columns: 20% 60%;
+}
+
+@media screen and (max-width: 900px) {
+  .footerWrapper {
+    grid-template-columns: 65%;
+    background-repeat: no-repeat;
+  }
 }
