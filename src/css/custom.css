@@ -41,14 +41,14 @@
     --ifm-color-emphasis-75: var(--ifm-color-gray-75);
     --ifm-color-pink: #f44af5;
     --ifm-color-pink-rgb: 244, 74 ,245;
-    --ifm-color-primary: #ea9b00;
+    --ifm-color-primary: #fc5230; /* = chakra primary.500 or figma color1 500 */
     --ifm-color-primary-rgb: var(--ifm-color-primary);
-    --ifm-color-primary-dark: #d38b00;
-    --ifm-color-primary-darker: #c78400;
-    --ifm-color-primary-darkest: #a46c00;
-    --ifm-color-primary-light: #ffaa02;
-    --ifm-color-primary-lighter: #ffae0e;
-    --ifm-color-primary-lightest: #ffba31;
+    --ifm-color-primary-dark: #f14c2c; /* = chakra primary.600 or figma color1 600 */
+    --ifm-color-primary-darker: #e34627; /* = chakra primary.700 or figma color1 700 */
+    --ifm-color-primary-darkest: #bb331b; /* = chakra primary.900 or figma color1 900 */
+    --ifm-color-primary-light: #fc6c4c; /* = chakra primary.400 or figma color1 400 */
+    --ifm-color-primary-lighter: #fc876c; /* = chakra primary.300 or figma color1 300 */
+    --ifm-color-primary-lightest: #fdcbbe; /* = chakra primary.100 or figma color1 100 */
     --ifm-color-purple: #9988ff;
     --ifm-color-purple-rgb: 153, 136 ,255;
     --ifm-color-secondary: var(--ifm-color-emphasis-100);
